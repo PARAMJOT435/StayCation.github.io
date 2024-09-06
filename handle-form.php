@@ -1,0 +1,20 @@
+<?php 
+session_start();
+include 'connection.php';
+if($_SERVER['REQUEST_METHOD']=="POST"){
+  $city=$_POST['city'];
+  $checkin=$_POST['checkin'];
+  $checkout=$_POST['checkout'];
+  $adults=$_POST['adults'];
+  $children=$_POST['children'];
+  if(isset($_POST['btn-go'])){
+    $_SESSION['city']=$city;
+    $_SESSION['checkin']=$checkin;
+    $_SESSION['checkout']=$checkout;
+    $_SESSION['adults']=$adults;
+    $_SESSION['children']=$children;
+    header('location:all-hotels-ludhiana.php');
+    exit;
+  }
+}
+?>

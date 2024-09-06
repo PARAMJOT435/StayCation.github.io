@@ -1,0 +1,21 @@
+
+  iframe.rounded-4 {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+  }
+  .card-form {
+    border: none; /* remove border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add shadow */
+  }
+  /* Add this to your CSS file */
+
+@media (max-width: 500px) {
+  .left {
+    margin: 0 auto;
+    float: none;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
